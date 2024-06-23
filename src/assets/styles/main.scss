@@ -8,14 +8,14 @@
 @import "basics/helpers";
 @import "basics/layout";
 @import "basics/base";
-@import "basics/links";
+// @import "basics/links";
 @import "basics/forms";
 
 
 // Views
 @import "views/AboutUs";
-@import "views/HomePage";
-@import "views/CarIndex";
+// @import "views/HomePage";
+@import "views/StoryIndex";
 @import "views/ReviewIndex";
 @import "views/UserDetails";
 @import "views/BoardIndex";

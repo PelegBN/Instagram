@@ -1,21 +1,21 @@
 import React from 'react'
 import { Routes, Route } from 'react-router'
 
-import { HomePage } from './pages/HomePage'
-import { AboutUs, AboutTeam, AboutVision } from './pages/AboutUs'
-import { CarIndex } from './pages/CarIndex.jsx'
+import { HomePage } from './pages/HomePage.jsx'
+import { AboutUs, AboutTeam, AboutVision } from './pages/AboutUs.jsx'
+import { StoryIndex } from './pages/StoryIndex.jsx'
 import { BoardIndex } from './pages/BoardIndex.jsx'
 import { ReviewIndex } from './pages/ReviewIndex.jsx'
 import { ChatApp } from './pages/Chat.jsx'
 import { AdminIndex } from './pages/AdminIndex.jsx'
 
-import { CarDetails } from './pages/CarDetails'
-import { UserDetails } from './pages/UserDetails'
-import { BoardDetails } from './pages/BoardDetails'
-import { TaskDetails } from './pages/TaskDetails'
+import { StoryDetails } from './pages/StoryDetails.jsx'
+import { UserDetails } from './pages/UserDetails.jsx'
+import { BoardDetails } from './pages/BoardDetails.jsx'
+import { TaskDetails } from './pages/TaskDetails.jsx'
 
-import { AppHeader } from './cmps/AppHeader'
-import { AppFooter } from './cmps/AppFooter'
+import { AppHeader } from './cmps/AppHeader.jsx'
+import { AppFooter } from './cmps/AppFooter.jsx'
 
 export function RootCmp() {
     return (
@@ -28,8 +28,8 @@ export function RootCmp() {
                         <Route path="team" element={<AboutTeam />} />
                         <Route path="vision" element={<AboutVision />} />
                     </Route>
-                    <Route path="car" element={<CarIndex />} />
-                    <Route path="car/:carId" element={<CarDetails />} />
+                    <Route path="story" element={<StoryIndex />} />
+                    <Route path="story/:storyId" element={<StoryDetails />} />
                     <Route path="user/:id" element={<UserDetails />} />
                     <Route path="board" element={<BoardIndex />} />
                     <Route path="board/:boardId" element={<BoardDetails />} >
